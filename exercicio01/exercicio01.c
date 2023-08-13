@@ -1,5 +1,5 @@
-/*6. Construa um programa para calcular uma equaÁ„o de segundo grau, onde x' e x'' 
-dever„o ser um ponteiro, imprima o valor de x'e x'' apÛs a execuÁ„o do programa.
+/*6. Construa um programa para calcular uma equa√ß√£o de segundo grau, onde x' e x'' 
+dever√£o ser um ponteiro, imprima o valor de x'e x'' ap√≥s a execu√ß√£o do programa.
 */
 
 #include <stdio.h>
@@ -13,7 +13,7 @@ void segundoGrau(Equacao *eq){
 	float delta = ((eq->b) * (eq->b)) - (4 * (eq->a) * (eq->c));	
 	if (delta >= 0) {
 	    eq->x1 = ((-eq->b) + sqrt(delta)) / (2 * (eq->a));
-	    eq->x1 = ((-eq->b) - sqrt(delta)) / (2 * (eq->a));		
+	    eq->x2 = ((-eq->b) - sqrt(delta)) / (2 * (eq->a));		
 	} else {
 		printf("\nRaiz negativa\n");
 	}
